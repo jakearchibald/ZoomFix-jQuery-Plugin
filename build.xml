@@ -14,6 +14,8 @@
 		<untar dest="${QUNIT_DIR}" src="${tempzip}" compression="gzip">
 			<regexpmapper from="^[^\/]*\/(.*)" to="\1"/>
 		</untar>
+		
+		<get dest="./test/lib/jquery.js" src="${JQUERY_URL}" />
 	</target>
 	
 </project>

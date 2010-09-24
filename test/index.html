@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUnit Test Suite</title>
+	<link rel="stylesheet" href="lib/qunit/qunit/qunit.css" type="text/css" />
+	<script src="lib/qunit/qunit/qunit.js"></script>
+	
+	<script src="lib/jquery.js"></script>
+	<script src="../src/jquery.zoomfix.js"></script>
+	<script src="test.js"></script>
+	<style>
+		#positionSizeTest {
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			top: 100px;
+			left: 100px;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="qunit-header">QUnit Test Suite</h1>
+	<h2 id="qunit-banner"></h2>
+	<div id="qunit-testrunner-toolbar"></div>
+	<h2 id="qunit-userAgent"></h2>
+	<ol id="qunit-tests"></ol>
+	<div id="qunit-fixture">
+		<div id="positionSizeTest"></div>
+	</div>
+</body>
+</html>
