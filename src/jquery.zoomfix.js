@@ -19,7 +19,7 @@
 		}
 		
 		var testValue = oldCurCssFn( $testElm.prependTo(document.body)[0], prop, true ),
-			errorCoefficient = 1000 / parseFloat(testValue),
+			errorCoefficient = testSize / parseFloat(testValue),
 			calculatedValue = oldCurCssFn.apply($, arguments),
 			unit = /[a-zA-Z%]*$/.exec(calculatedValue),
 			parsedValue = parseFloat(calculatedValue);
