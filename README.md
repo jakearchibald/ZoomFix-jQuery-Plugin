@@ -7,8 +7,8 @@ values.
 
 This plugin aims to address that at the expense of performance.
 
-This is very much a work-in-progress and currently only fixes `.css('left')` and
-`.css('top')`.
+This is very much a work-in-progress and currently only fixes .css properties
+'top', 'left', 'width', 'height'.
 
 To Use
 ------
