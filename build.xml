@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="zoomFix-jQuery-Plugin" default="deps" basedir=".">
+	<property file="build.properties" />
+	<property name="QUNIT_DIR" value="./test/lib/qunit/" />
+	
+	<target name="deps">
+		<echo message="Setting up external dependencies" />
+		<tempfile property="tempzip" deleteonexit="yes" />
+		
+		<delete dir="${QUNIT_DIR}" />
+		<mkdir dir="${QUNIT_DIR}" />
+		<get dest="${tempzip}" src="${QUNIT_URL}" />
+		<untar dest="${QUNIT_DIR}" src="${tempzip}" compression="gzip">
+			<regexpmapper from="^[^\/]*\/(.*)" to="\1"/>
+		</untar>
+	</target>
+	
+</project>
