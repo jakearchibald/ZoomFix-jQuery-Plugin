@@ -11,9 +11,14 @@ test('css', 7, function() {
 	strictEqual( $test.css('border-top-width'), '100px', 'border' );
 });
 
-test('dimension', 2, function() {
+test('dimension', 8, function() {
 	var $test = $('#positionSizeTest');
 	strictEqual( $test.width(), 100, 'width' );
 	strictEqual( $test.height(), 100, 'height' );
-	
+	strictEqual( $test.innerWidth(), 200, 'innerWidth' );
+	strictEqual( $test.innerHeight(), 200, 'innerHeight' );
+	strictEqual( $test.outerWidth(), 300, 'outerWidth' );
+	strictEqual( $test.outerHeight(), 300, 'outerHeight' );
+	strictEqual( $test.outerWidth(true), 400, 'outerWidth inc margin' );
+	strictEqual( $test.outerHeight(true), 400, 'outerHeight inc margin' );
 });
