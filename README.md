@@ -7,8 +7,17 @@ values.
 
 This plugin aims to address that at the expense of performance.
 
-This is very much a work-in-progress and currently only fixes .css properties
-'top', 'left', 'width', 'height'.
+This is very much a work-in-progress and currently only fixes:
+
+* .css('top')
+* .css('left')
+* .css('width')
+* .css('height')
+* .css('padding-*')
+* .css('margin-*')
+* .css('border-*-width')
+* .width()
+* .height()
 
 To Use
 ------

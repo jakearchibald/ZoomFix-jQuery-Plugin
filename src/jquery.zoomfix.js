@@ -8,6 +8,9 @@
 			left: testSize,
 			width: testSize,
 			height: testSize,
+			border: testSize + 'px solid #000',
+			padding: testSize,
+			margin: testSize,
 			overflow: 'hidden',
 			margin: 0,
 			padding: 0
@@ -22,7 +25,7 @@
 	$.curCSS = function(element, prop, force) {
 		// only supports certain properties at the moment
 		// If force isn't true, the value may come straight from the style object which doesn't have zoom bugs
-		if ( !/^(?:top|left|width|height)$/.test(prop) || (!force && element.style[prop]) ) {
+		if ( !/^(?:(?:top|left|width|height)$)|(?:margin|border|padding)/.test(prop) || (!force && element.style[prop]) ) {
 			return oldCurCssFn.apply(this, arguments);
 		}
 		
