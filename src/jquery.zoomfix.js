@@ -11,9 +11,7 @@
 			border: testSize + 'px solid #000',
 			padding: testSize,
 			margin: testSize,
-			overflow: 'hidden',
-			margin: 0,
-			padding: 0
+			overflow: 'hidden'
 		});
 	
 	// when zoom values changes a resize event is fired, invalidate the cache
